@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       cursor: {
@@ -73,9 +69,13 @@ module.exports = {
     },
 
     fontFamily: {
-      button: "Roboto",
-      text: "Poppins, sans-serif",
-      links: "Inter', sans-serif",
+      regular: ["var(--roca-regular)"],
+      thin: ["var(--rocaHv-thin)"],
+      light: ["var(--roca-light)"],
+      bold: ["var(--rocaHv-bold)"],
+      heavy: ["var(--rocaHv-heavy)"],
+      black: ["var(--rocaBl-black)"],
+      copy: ["var(--eb-regular)"],
     },
     borderRadius: {
       cornerRound: "10px",
